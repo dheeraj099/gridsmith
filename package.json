@@ -1,0 +1,45 @@
+{
+  "name": "@dheeraj099/gridsmith",
+  "version": "1.0.0",
+  "description": "Headless React data grid with virtualization, multi-sort, column pinning, inline editing, and column resize",
+  "type": "module",
+  "main": "./dist-lib/gridsmith.cjs.js",
+  "module": "./dist-lib/gridsmith.esm.js",
+  "types": "./dist-lib/types/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist-lib/gridsmith.esm.js",
+      "require": "./dist-lib/gridsmith.cjs.js"
+    }
+  },
+  "files": ["dist-lib"],
+  "keywords": ["react","datagrid","table","virtualization","typescript","headless"],
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "build:lib": "tsc -b && vite build --mode lib",
+    "lint": "oxlint",
+    "preview": "vite preview"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "lucide-react": "^1.60.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "tailwindcss": "^4.3.3"
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "oxlint": "^1.88.0",
+    "typescript": "~6.0.3",
+    "vite": "^8.3.4"
+  }
+}
